@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for Rugby Score Keeper App
+     Udacity - Android Basics NanoDegree Program - Project 2
+     Warren Mick, wmick@nycap.rr.com, May 2018
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context="com.example.android.scorekeeper2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/teamHome" />
+
+            <TextView
+                android:id="@+id/homeScoreTextView"
+                style="@style/textPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/zero" />
+
+            <Button
+                style="@style/mainStyle"
+                android:onClick="addFiveHome"
+                android:text="@string/addFivePoints" />
+
+            <Button
+                style="@style/mainStyle"
+                android:onClick="addThreeHome"
+                android:text="@string/addThreePoints" />
+
+            <Button
+                style="@style/mainStyle"
+                android:onClick="addTwoHome"
+                android:text="@string/addTwoPoints" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/primaryDarkColor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/teamGuest" />
+
+            <TextView
+                android:id="@+id/guestScoreTextView"
+                style="@style/textPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/zero" />
+
+            <Button
+                style="@style/mainStyle"
+                android:onClick="addFiveGuest"
+                android:text="@string/addFivePoints" />
+
+            <Button
+                style="@style/mainStyle"
+                android:onClick="addThreeGuest"
+                android:text="@string/addThreePoints" />
+
+            <Button
+                style="@style/mainStyle"
+                android:onClick="addTwoGuest"
+                android:text="@string/addTwoPoints" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/textSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/scoringKeyTitle" />
+
+    <TextView
+        style="@style/textTertiary"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:text="@string/scoringKey" />
+
+    <Button
+        style="@style/mainStyle"
+        android:onClick="resetGame"
+        android:text="@string/resetGame" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  colors set using Material Design color tool
+    https://material.io/color/#!/?view.left=0&view.right=0&secondary.color=E64A19&primary.color=F57C00 -->
+    <color name="primaryColor">#f57c00</color>
+    <color name="primaryLightColor">#ffad42</color>
+    <color name="primaryDarkColor">#bb4d00</color>
+    <color name="secondaryColor">#e64a19</color>
+    <color name="secondaryLightColor">#ff7d47</color>
+    <color name="secondaryDarkColor">#ac0800</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#883300</color>
+    <color name="black">#000000</color>
+    </resources>
